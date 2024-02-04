@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function SearchBar({onSubmit} ) {
 
-  const [term,setCumshot] = useState(''); 
+  const [term,setCamshot] = useState(''); 
   
   const handleFormSubmit=(balls)=>{
     balls.preventDefault();
@@ -11,7 +11,7 @@ function SearchBar({onSubmit} ) {
     onSubmit(term);
   };
   const handleChange = (balls) =>{
-    setCumshot(balls.target.value);
+    setCamshot(balls.target.value);
   };
 
   return (<div className='search-bar'>
